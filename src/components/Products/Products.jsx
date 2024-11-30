@@ -26,8 +26,8 @@ const products = [
 ]
 const Products = () => {
   return (
-    <div className='bg-gray-100 py-12 px-4'>
-        <div className='flex flex-col md:flex-row justify-center items-center mb-8'>
+    <div className='bg-gray-100 pt-40 py-12 px-4'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-20 mb-8'>
             <div className='mb-6 md:mb-0 text-center md:text-left md:w-1/4'>
                 <h2 className='text-3xl font-bold text-center mb-8'>Crafted With Excellent Material</h2>
                 <p className='text-center text-gray-700 mb-8'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor
@@ -36,7 +36,7 @@ const Products = () => {
             </div>
             <div className='w-full md:w-3/4'>
                  {/* Products */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
                     {
                         products.map((data) => (
                             <ProductCard key={data.id} image={data.image} name={data.name} price={data.price} />

@@ -26,13 +26,14 @@ const products = [
 ]
 const Products = () => {
   return (
-    <div className='bg-gray-100 pt-40 py-12 px-4'>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-20 mb-8'>
-            <div className='mb-6 md:mb-0 text-center md:text-left md:w-1/4'>
-                <h2 className='text-3xl font-bold text-center mb-8'>Crafted With Excellent Material</h2>
-                <p className='text-center text-gray-700 mb-8'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor
+    <div className='pt-48 py-16'>
+        <div className='container flex flex-col mx-auto items-center lg:justify-between md:flex-row  gap-10 mb-8'>
+            <div className='mb-6 md:mb-0 transform -translate-y-40  md:text-left md:w-1/4'>
+                <h2 className='text-3xl font-semibold text-start mb-8'>Crafted With <br /> excellent Material</h2>
+                <p className='text-start text-gray-700 mb-8'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor
                 tempor tristique.
                 </p>
+                <button className='bg-gray-900 rounded-full text-white font-bold py-3 px-6 border-white border-[1px]'>Explore</button>
             </div>
             <div className='w-full md:w-3/4'>
                  {/* Products */}

@@ -4,7 +4,7 @@ import bg from '../../assets/Images/dots-green.svg'
 
 const Hero = () => {
   return (
-    <div className='bg-primary text-white  px-6 py-12'>
+    <div className='bg-primary text-white px-20 py-12'>
         <div className='flex items-center'>
             {/* Text */}
             <div className='space-y-6 w-1/2'>
@@ -23,7 +23,7 @@ const Hero = () => {
             <img 
                 src={bg} 
                 alt="Background" 
-                className="absolute top-0 right-10 w-1/3 h-auto z-0" 
+                className="absolute top-0 right-0 w-1/3 h-auto z-0" 
             />
              {/* Couch image */}
             <img 

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Products from './components/Products/Products'
 import Testimonial from './components/Testimonial/Testimonial'
 import WhyChoose from './components/WhyChoose/WhyChoose'
+import WhyUs from './components/WhyUs/WhyUs'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Hero />
     <Products />
     <WhyChoose />
+    <WhyUs />
     <Testimonial />
     <Footer />
     </>

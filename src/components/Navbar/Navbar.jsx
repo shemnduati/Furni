@@ -1,41 +1,42 @@
 import React from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 import { FaCartShopping, FaUser } from 'react-icons/fa6'
-
+import { Link, useLocation } from 'react-router-dom';
 
 const Menu = [
     { 
         id: 1,
         name: 'Home', 
-        link: '/#'
+        link: '/'
      },
      { 
         id: 2,
         name: 'Shop', 
-        link: '/#'
+        link: '/shop'
      },
      { 
         id: 3,
         name: 'About Us', 
-        link: '/#'
+        link: '/about'
      },
      { 
         id: 4,
         name: 'Services', 
-        link: '/#'
+        link: '/services'
      },
      { 
         id: 5,
         name: 'Blog', 
-        link: '/#'
+        link: '/blog'
      },
      { 
         id: 6,
         name: 'Contact Us', 
-        link: '/#'
+        link: '/contact'
      },
 ]
 const Navbar = () => {
+  const location = useLocation();
   return (
     <div className='text-white relative z-40'>
        <div className='bg-primary py-2'>
@@ -49,18 +50,18 @@ const Navbar = () => {
                     <ul className='sm:flex hidden items-center gap-4'>
                         {Menu.map((data) => (
                         <li key={data.id} className="relative">
-                            <a
-                            href={data.link}
-                            className={`inline-block px-4 space-y-4 font-semibold 
-                                text-gray-200 
-                                hover:text-white 
-                                ${data.name === 'Home' ? 'text-white' : ''}`}
-                            >
-                            {data.name}
-                            </a>
-                            {/* Highlight the default active link */}
-                            {data.name === 'Home' && (
-                            <span className="absolute left-3 -bottom-2 w-9/12   h-[4px] bg-yellow-400"></span>
+                            <Link
+                              to={data.link}
+                              className={`inline-block px-4 space-y-4 font-semibold 
+                                  text-gray-200 
+                                  hover:text-white 
+                                  ${data.name === 'Home' ? 'text-white' : ''}`}
+                              >
+                              {data.name}
+                            </Link>
+                           {/* Highlight the active link dynamically */}
+                           {location.pathname === data.link && (
+                              <span className="absolute left-3 -bottom-2 w-9/12 h-[4px] bg-yellow-400"></span>
                             )}
                         </li>
                         ))}

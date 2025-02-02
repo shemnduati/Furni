@@ -1,30 +1,29 @@
 import './App.css'
-import Blog from './components/Blog/Blog'
-import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
-import News from './components/News/News'
-import NewsLetter from './components/NewsLetter/NewsLetter'
-import Products from './components/Products/Products'
-import Testimonial from './components/Testimonial/Testimonial'
-import WhyChoose from './components/WhyChoose/WhyChoose'
-import WhyUs from './components/WhyUs/WhyUs'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Home from './components/Pages/Home/Home';
+import Shop from './components/Pages/Shop/Shop';
+import About from './components/Pages/About/About';
+import Blog from './components/Pages/Blog/Blog';
+import Services from './components/Pages/Services/Services';
+import Contact from './components/Pages/Contact/Contact';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (
-    <>
+   <Router>
     <Navbar />
-    <Hero />
-    <Products />
-    <WhyChoose />
-    <WhyUs />
-    <Blog />
-    <Testimonial />
-    <News />
-    <NewsLetter />
-    <Footer />
-    </>
-  )
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/shop' element={<Shop />} />
+      <Route path='/blog' element={<Blog />} />
+      <Route path='/services' element={<Services />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+    </Router>
+  );
 }
 
 export default App

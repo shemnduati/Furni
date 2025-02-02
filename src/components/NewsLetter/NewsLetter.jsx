@@ -8,8 +8,8 @@ const NewsLetter = () => {
   return (
     <div className='bg-white relative'>
        <div className='container'>
-          <div className='flex justify-between items-center  py-10 px-20'>
-            <div className='flex flex-col space-y-1'>
+          <div className='flex justify-between items-start  py-10 '>
+            <div className='flex flex-col space-y-1 w-1/2'>
                 <div className='flex gap-2'>
                   <BiEnvelope className='text-2xl text-gray-400'/>
                   <h1 className='text-center font-semibold text-md text-primary mb-8'>Subscribe to our Newsletter</h1>

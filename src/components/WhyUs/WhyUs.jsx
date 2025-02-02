@@ -8,7 +8,7 @@ import Img3 from '../../assets/Images/img-grid-3.jpg';
 
 const WhyUs = () => {
   return (
-    <div className='py-16'>
+    <div className='py-16 bg-gray-50'>
         <div className='container mx-auto flex flex-col lg:flex-row items-center lg:justify-between gap-8'>
         {/* Image Section */}
         <div className='lg:w-1/2 relative'>

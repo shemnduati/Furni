@@ -8,7 +8,7 @@ import Return from '../../assets/Images/return.svg';
 
 const WhyChoose = () => {
   return (
-    <div className='py-8'>
+    <div className='py-8 bg-gray-50'>
         <div className='container mx-auto flex flex-col lg:flex-row items-center lg:justify-between gap-8'>
         <div className='lg:w-1/2 space-y-8'>
             {/* Text Area */}

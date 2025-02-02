@@ -26,7 +26,7 @@ const products = [
 ]
 const Products = () => {
   return (
-    <div className='pt-48 py-16'>
+    <div className='pt-48 py-16 bg-gray-50'>
         <div className='container flex flex-col mx-auto items-center lg:justify-between md:flex-row  gap-10 mb-8'>
             <div className='mb-6 md:mb-0 transform -translate-y-40  md:text-left md:w-1/4'>
                 <h2 className='text-3xl font-semibold text-start mb-8'>Crafted With <br /> excellent Material</h2>

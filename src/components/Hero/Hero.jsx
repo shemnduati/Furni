@@ -5,10 +5,11 @@ import bg from '../../assets/Images/dots-green.svg'
 const Hero = () => {
   return (
     <div className='bg-primary text-white px-20 py-12'>
-        <div className='flex items-center'>
+       <div className='container'>
+       <div className='flex items-center gap-10'>
             {/* Text */}
-            <div className='space-y-6 w-1/2'>
-                <h1 className=' font-bold text-4xl'>Modern Interior Design Studio</h1>
+            <div className='items-start space-y-6 w-1/2 px-r-10 2xl:px-r-20'>
+                <h1 className=' font-bold text-2xl 2xl:text-6xl lg:text-4xl '>Modern Interior Design Studio</h1>
                 <p className='text-lg'>Donec vitae odio quis nisl dapibus malesuada. 
                     Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor
                      tempor tristique.</p>
@@ -33,6 +34,7 @@ const Hero = () => {
             />
             </div>
         </div>
+       </div>
     </div>
   )
 }

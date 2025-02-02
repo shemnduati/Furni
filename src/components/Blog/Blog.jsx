@@ -25,7 +25,8 @@ const Blog = () => {
         }
     ]
   return (
-    <div className='container py-16'>
+   <div className='bg-gray-50'>
+     <div className='container py-16'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
                 chairs.map((chair) => (
@@ -46,6 +47,7 @@ const Blog = () => {
             }
         </div>
     </div>
+   </div>
   )
 }
 

@@ -5,6 +5,8 @@ import Image from '../../../assets/Images/couch.png';
 import bg from '../../../assets/Images/dots-green.svg';
 import Testimonial from '../../Testimonial/Testimonial';
 import NewsLetter from '../../NewsLetter/NewsLetter';
+import WhyChoose from '../../WhyChoose/WhyChoose';
+import OurTeam from '../Sections/OurTeam';
 
 function About() {
     const subtitle = `Founded in 2007, Furni began with a simple vision: to offer beautifully 
@@ -22,6 +24,8 @@ function About() {
            button1Action={() => alert("Shop Now Clicked")} 
            button2Action={() => alert("Learn More Clicked")} 
         />
+        <WhyChoose />
+        <OurTeam />
         <Testimonial />
         <NewsLetter />
         <Footer />
